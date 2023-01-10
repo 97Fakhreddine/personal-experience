@@ -20,7 +20,7 @@
   --transition: all 400ms ease;
   --container-width-lg: 75%;
   --container-width-md: 86%;
-  --container-width-ms: 90%;
+  --container-width-ms: calc(100% - 70px);
 }
 html {
   scroll-behavior: smooth;
@@ -44,7 +44,9 @@ body {
   width: var(--container-width-lg);
   margin: auto;
 }
-
+img {
+  width: 100%;
+}
 h1,
 h2,
 h3,
