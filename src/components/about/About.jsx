@@ -4,12 +4,14 @@ import ME from '../../assets/images/me-about.jpg';
 import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';
+import { useTranslation } from 'react-i18next';
 
 function About() {
+  const { t } = useTranslation();
   return (
     <section id="about">
-      <h5>Get To Know Me</h5>
-      <h2>About Me</h2>
+      <h5>{t('TITLE_H5')}</h5>
+      <h2>{t('TITLE_H2')}</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -21,28 +23,25 @@ function About() {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <h5>{t('EXPERIENCE_TITLE')}</h5>
+              <small>{t('EXPERIENCE_P')}</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <h5>{t('CLIENT_TITLE')}</h5>
+              <small>{t('CLIENT_P')}</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <h5>{t('PROJECT_TITLE')}</h5>
+              <small>{t('PROJECT_P')}</small>
             </article>
           </div>
-          <p>
-            Lorem ipsum is placeholder text commonly used in the graphic, print,
-            and publishing industries for previewing layouts and visual mockups.{' '}
-          </p>
+          <p>{t('DESCRIPTION')}</p>
           <a href="#contact" className="btn btn-primary">
-            Let's Talk
+            {t('CONTACT_BTN')}
           </a>
         </div>
       </div>

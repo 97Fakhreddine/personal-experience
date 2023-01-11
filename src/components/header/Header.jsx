@@ -25,7 +25,7 @@ function Header() {
         </div>
 
         <a href="#contact" className="scroll__down">
-          Scroll Down{' '}
+          {t('SCROLL_DOWN')}
         </a>
       </div>
     </header>
