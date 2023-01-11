@@ -8,6 +8,8 @@ import experiencedTFr from '../../components/experience/i18n/fr';
 import experiencedTEn from '../../components/experience/i18n/en';
 import contactTFr from '../../components/contact/i18n/fr';
 import contactTEn from '../../components/contact/i18n/en';
+import serviceTFr from '../../components/services/i18n/fr';
+import serviceTEn from '../../components/services/i18n/en';
 import footerTFr from '../../components/footer/i18n/fr';
 import footerTEn from '../../components/footer/i18n/en';
 
@@ -16,6 +18,7 @@ const allEnglishTranslation = {
   ...aboutTEng,
   ...experiencedTEn,
   ...contactTEn,
+  ...serviceTEn,
   ...footerTEn,
 };
 const allFrenchTranslation = {
@@ -23,6 +26,7 @@ const allFrenchTranslation = {
   ...aboutTFr,
   ...experiencedTFr,
   ...contactTFr,
+  ...serviceTFr,
   ...footerTFr,
 };
 

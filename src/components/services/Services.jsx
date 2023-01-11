@@ -1,101 +1,49 @@
 import React from 'react';
 import './services.css';
 import { BiCheck } from 'react-icons/bi';
+import { useTranslation } from 'react-i18next';
+import data from './i18n/en';
 
 function Services() {
+  const { t } = useTranslation();
+
+  const createList = (name) => {
+    const result = [];
+    for (const key in data) {
+      if (key.toString().indexOf(name) > -1) {
+        result.push(
+          <li>
+            <BiCheck className="service__list-icon" />
+            <p>{t(key)}</p>
+          </li>
+        );
+      }
+    }
+    return result;
+  };
+
   return (
     <section id="services">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+      <h5>{t('SERVICES_TITLE_H5')}</h5>
+      <h2>{t('SERVICES_TITLE_H2')}</h2>
 
       <div className="container container__services">
         <article className="service">
           <div className="service__head">
-            <h3>UI/UX design</h3>
+            <h3>{t('SERVICES_1')}</h3>
           </div>
-
           <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
+            {createList('SERVICES_1_SUB').map((e) => e)}
           </ul>
         </article>
 
         <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>{t('SERVICES_2')}</h3>
           </div>
 
           <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
+            {createList('SERVICES_2_SUB').map((e) => e)}
           </ul>
         </article>
 
@@ -103,46 +51,11 @@ function Services() {
 
         <article className="service">
           <div className="service__head">
-            <h3>Content Creation</h3>
+            <h3>{t('SERVICES_3')}</h3>
           </div>
 
           <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Nulla Lorem commodo officia excepteur id minim exercitation
-                tempor in quis non.
-              </p>
-            </li>
+            {createList('SERVICES_3_SUB').map((e) => e)}
           </ul>
         </article>
 
