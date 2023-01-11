@@ -15,11 +15,19 @@ header {
   position: fixed;
   right: 3rem;
   top: 1rem;
+  z-index: 101;
 }
 
 .language__select-item {
   background: transparent;
   color: var(--color-primary);
+}
+
+.dark__mode-btn {
+  width: fit-content;
+  position: fixed;
+  right: 1rem;
+  top: 3.5rem;
 }
 /*  ===== CTA ==== */
 
