@@ -1,6 +1,6 @@
 const translation = {
-  TITLE_H5: 'Get to Know Me',
-  TITLE_H2: 'About Me',
+  ABOUT_TITLE_H5: 'Get to Know Me',
+  ABOUT_TITLE_H2: 'About Me',
   EXPERIENCE_TITLE: 'Experience',
   EXPERIENCE_P: '2+ Years Working',
   CLIENT_TITLE: 'Client',

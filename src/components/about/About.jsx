@@ -10,8 +10,8 @@ function About() {
   const { t } = useTranslation();
   return (
     <section id="about">
-      <h5>{t('TITLE_H5')}</h5>
-      <h2>{t('TITLE_H2')}</h2>
+      <h5>{t('ABOUT_TITLE_H5')}</h5>
+      <h2>{t('ABOUT_TITLE_H2')}</h2>
 
       <div className="container about__container">
         <div className="about__me">

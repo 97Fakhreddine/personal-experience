@@ -4,9 +4,15 @@ import headerTEng from '../../components/header/i18n/en';
 import headerTFr from '../../components/header/i18n/fr';
 import aboutTEng from '../../components/about/i18n/en';
 import aboutTFr from '../../components/about/i18n/fr';
+import experiencedTFr from '../../components/experience/i18n/fr';
+import experiencedTEn from '../../components/experience/i18n/en';
 
-const allEnglishTranslation = { ...headerTEng, ...aboutTEng };
-const allFrenchTranslation = { ...headerTFr, ...aboutTFr };
+const allEnglishTranslation = {
+  ...headerTEng,
+  ...aboutTEng,
+  ...experiencedTEn,
+};
+const allFrenchTranslation = { ...headerTFr, ...aboutTFr, ...experiencedTFr };
 
 const language = localStorage.getItem('lng');
 
