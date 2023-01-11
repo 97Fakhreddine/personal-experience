@@ -6,6 +6,8 @@ import aboutTEng from '../../components/about/i18n/en';
 import aboutTFr from '../../components/about/i18n/fr';
 import experiencedTFr from '../../components/experience/i18n/fr';
 import experiencedTEn from '../../components/experience/i18n/en';
+import contactTFr from '../../components/contact/i18n/fr';
+import contactTEn from '../../components/contact/i18n/en';
 import footerTFr from '../../components/footer/i18n/fr';
 import footerTEn from '../../components/footer/i18n/en';
 
@@ -13,12 +15,14 @@ const allEnglishTranslation = {
   ...headerTEng,
   ...aboutTEng,
   ...experiencedTEn,
+  ...contactTEn,
   ...footerTEn,
 };
 const allFrenchTranslation = {
   ...headerTFr,
   ...aboutTFr,
   ...experiencedTFr,
+  ...contactTFr,
   ...footerTFr,
 };
 
