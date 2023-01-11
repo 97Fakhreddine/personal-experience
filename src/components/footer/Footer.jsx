@@ -44,17 +44,17 @@ function Footer() {
       </ul>
 
       <div className="footer__socials">
-        <a href={facebookURL}>
+        <a href={facebookURL} target="__blank">
           <FaFacebookF />
         </a>
-        <a href={instagramURL}>
+        <a href={instagramURL} target="__blank">
           <FiInstagram />
         </a>
-        <a href={linkedInURL}>
+        <a href={linkedInURL} target="__blank">
           <FiLinkedin />
         </a>
 
-        <a href={githubURL}>
+        <a href={githubURL} target="__blank">
           <FiGithub />
         </a>
       </div>
