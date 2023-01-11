@@ -10,6 +10,17 @@ header {
   position: relative;
 }
 
+.languge__select {
+  width: fit-content;
+  position: fixed;
+  right: 3rem;
+  top: 1rem;
+}
+
+.language__select-item {
+  background: transparent;
+  color: var(--color-primary);
+}
 /*  ===== CTA ==== */
 
 .cta {
