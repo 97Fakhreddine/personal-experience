@@ -6,13 +6,21 @@ import aboutTEng from '../../components/about/i18n/en';
 import aboutTFr from '../../components/about/i18n/fr';
 import experiencedTFr from '../../components/experience/i18n/fr';
 import experiencedTEn from '../../components/experience/i18n/en';
+import footerTFr from '../../components/footer/i18n/fr';
+import footerTEn from '../../components/footer/i18n/en';
 
 const allEnglishTranslation = {
   ...headerTEng,
   ...aboutTEng,
   ...experiencedTEn,
+  ...footerTEn,
 };
-const allFrenchTranslation = { ...headerTFr, ...aboutTFr, ...experiencedTFr };
+const allFrenchTranslation = {
+  ...headerTFr,
+  ...aboutTFr,
+  ...experiencedTFr,
+  ...footerTFr,
+};
 
 const language = localStorage.getItem('lng');
 

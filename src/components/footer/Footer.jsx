@@ -3,56 +3,64 @@ import './footer.css';
 
 import { FaFacebookF } from 'react-icons/fa';
 import { FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
+import {
+  facebookURL,
+  githubURL,
+  instagramURL,
+  linkedInURL,
+} from '../../constants/constant';
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer>
-      <a href="" className="footer__logo">
-        Fakhry
+      <a href={githubURL} className="footer__logo" target="__blank">
+        {t('MY_NAME')}
       </a>
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#">{t('HOME')}</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">{t('ABOUT')}</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#experience">{t('EXPERIENCE')}</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#services">{t('SERVICES')}</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">{t('PORTFOLIO')}</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonial</a>
+          <a href="#testimonials">{t('TESTIMONIALS')}</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">{t('CONTACT')}</a>
         </li>
       </ul>
 
       <div className="footer__socials">
-        <a href="">
+        <a href={facebookURL}>
           <FaFacebookF />
         </a>
-        <a href="">
+        <a href={instagramURL}>
           <FiInstagram />
         </a>
-        <a href="">
+        <a href={linkedInURL}>
           <FiLinkedin />
         </a>
 
-        <a href="">
+        <a href={githubURL}>
           <FiGithub />
         </a>
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Made by Fakhreddine Messaoudi. All right reserved</small>
+        <small>&copy; {t('COPY_RIGHT')}</small>
       </div>
     </footer>
   );
