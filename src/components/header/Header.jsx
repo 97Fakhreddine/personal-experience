@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
 import CTA from './CTA';
-import ME from '../../assets/images/me.png';
+import ME from '../../assets/images/me.svg';
 import HeaderSocial from './HeaderSocial';
 import { useTranslation } from 'react-i18next';
 import LanguageSelect from '../../core/@ui/LanguageSelect';

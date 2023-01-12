@@ -38,6 +38,11 @@ body {
   background-image: url(../src/assets/images/bg-texture.png);
 }
 
+.cursor-disable {
+  cursor: none;
+  pointer-events: none;
+}
+
 /* =================== General styles ============  */
 
 .container {
