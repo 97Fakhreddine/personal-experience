@@ -6,6 +6,7 @@ const githubURL = 'https://github.com/97Fakhreddine';
 const facebookURL = 'https://www.facebook.com/Fakhri.Shaarawy';
 const instagramURL = 'https://www.instagram.com/fakhreddine_messaoudi';
 const linkedInURL = 'https://www.linkedin.com/in/97fakhreddine/';
+
 module.exports = {
   SERVICE_ID,
   TEMPLATE_ID,

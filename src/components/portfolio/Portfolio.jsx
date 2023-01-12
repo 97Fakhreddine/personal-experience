@@ -6,6 +6,7 @@ import IMG3 from '../../assets/images/portfolio3.jpg';
 import IMG4 from '../../assets/images/portfolio4.jpg';
 import IMG5 from '../../assets/images/portfolio5.png';
 import IMG6 from '../../assets/images/portfolio6.jpg';
+import allProjects from '../../mock/portfolio';
 
 function Portfolio() {
   const portfolioData = [
@@ -58,7 +59,7 @@ function Portfolio() {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        {portfolioData.map((e, index) => {
+        {allProjects.map((e, index) => {
           return (
             e && (
               <article className="portfolio__item" key={e.id}>
