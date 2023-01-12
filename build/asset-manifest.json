@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3f3c4c6.css",
+    "main.js": "/static/js/main.cfc6ca53.js",
+    "static/media/react-quizz.png": "/static/media/react-quizz.ca66971fe39daa0c4b3b.png",
+    "static/media/bairdhunt.png": "/static/media/bairdhunt.51300bde3a960071b23a.png",
+    "static/media/konnect.png": "/static/media/konnect.881740f4b23fda6d3553.png",
+    "static/media/edorer.png": "/static/media/edorer.548f83a5d154739729d0.png",
+    "static/media/me-aboutt.jpg": "/static/media/me-aboutt.fb4452e7f286d3636ef9.jpg",
+    "static/media/flappybird.png": "/static/media/flappybird.e75e8f67ac2ed833ae76.png",
+    "static/media/Fakhreddine_Messaoudi.pdf": "/static/media/Fakhreddine_Messaoudi.7a707436fbf44efa5697.pdf",
+    "static/media/portfolio5.png": "/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
+    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.94131a511c0889183751.png",
+    "static/media/portfolio2.jpg": "/static/media/portfolio2.ae187bc4e43ae6dbc263.jpg",
+    "static/media/portfolio6.jpg": "/static/media/portfolio6.72d1107e313049cf15a7.jpg",
+    "static/media/portfolio1.jpg": "/static/media/portfolio1.f5e72352e5aa840702b8.jpg",
+    "static/media/portfolio3.jpg": "/static/media/portfolio3.cbab42559fe73e73906f.jpg",
+    "static/media/portfolio4.jpg": "/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
+    "static/media/me-about.png": "/static/media/me-about.989e8e5ab91c82a7cbae.png",
+    "static/media/me.png": "/static/media/me.8e98dc8e307997b8bc52.png",
+    "static/media/me.svg": "/static/media/me.629473e21b3813488a46e5f6ee28e4ea.svg",
+    "index.html": "/index.html",
+    "main.f3f3c4c6.css.map": "/static/css/main.f3f3c4c6.css.map",
+    "main.cfc6ca53.js.map": "/static/js/main.cfc6ca53.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3f3c4c6.css",
+    "static/js/main.cfc6ca53.js"
+  ]
+}
