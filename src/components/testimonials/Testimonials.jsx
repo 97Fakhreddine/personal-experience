@@ -4,13 +4,10 @@ import AVATAR1 from '../../assets/images/avatar1.jpg';
 import AVATAR2 from '../../assets/images/avatar2.jpg';
 import AVATAR3 from '../../assets/images/avatar3.jpg';
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper';
 
 function Testimonials() {
   const testimonialData = [
@@ -24,7 +21,6 @@ function Testimonials() {
       id: 2,
       image: AVATAR2,
       title: 'Earnest Achiever',
-
       description: 'Sit duis aliqua ad est irure.',
     },
     {
@@ -34,6 +30,7 @@ function Testimonials() {
       description: 'Sit duis aliqua ad est irure.',
     },
   ];
+
   return (
     <section id="testimonials">
       <h5>Review My Clients</h5>
@@ -46,19 +43,19 @@ function Testimonials() {
         modules={[Pagination]}
         pagination={{ clickable: true }}
       >
-        {testimonialData.map((e, index) => {
-          return (
-            e && (
-              <SwiperSlide className="testimonial" key={index}>
-                <div className="client__avatar">
-                  <img src={e.image} className="img" />
-                </div>
-                <h5 className="client__name">{e.title}</h5>
-                <small className="client__review">{e.description}</small>
-              </SwiperSlide>
-            )
-          );
-        })}
+        {testimonialData.map((testimonial) => (
+          <SwiperSlide className="testimonial" key={testimonial.id}>
+            <div className="client__avatar">
+              <img
+                src={testimonial.image}
+                className="img"
+                alt={testimonial.title}
+              />
+            </div>
+            <h5 className="client__name">{testimonial.title}</h5>
+            <small className="client__review">{testimonial.description}</small>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

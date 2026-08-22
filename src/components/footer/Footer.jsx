@@ -15,7 +15,12 @@ function Footer() {
   const { t } = useTranslation();
   return (
     <footer>
-      <a href={githubURL} className="footer__logo" target="__blank">
+      <a
+        href={githubURL}
+        className="footer__logo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {t('MY_NAME')}
       </a>
 
@@ -44,17 +49,36 @@ function Footer() {
       </ul>
 
       <div className="footer__socials">
-        <a href={facebookURL} target="__blank">
+        <a
+          href={facebookURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
           <FaFacebookF />
         </a>
-        <a href={instagramURL} target="__blank">
+        <a
+          href={instagramURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
           <FiInstagram />
         </a>
-        <a href={linkedInURL} target="__blank">
+        <a
+          href={linkedInURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
           <FiLinkedin />
         </a>
-
-        <a href={githubURL} target="__blank">
+        <a
+          href={githubURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
           <FiGithub />
         </a>
       </div>
