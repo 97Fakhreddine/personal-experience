@@ -1,51 +1,48 @@
-import uuid from 'react-uuid';
-
 const allProjects = [
-
   {
-    id: uuid(),
+    id: 'albaraka',
     title: 'Albaraka ( Front-end-engineer )',
     image: 'banecti.png',
     demo: 'https://www.banecti.com.tn/dashboard',
   },
   {
-    id: uuid(),
+    id: 'star-insurance',
     title: 'Star insurance ( Front-end-engineer )',
     image: 'star.png',
     demo: 'https://www.star.com.tn/',
   },
   {
-    id: uuid(),
+    id: 'bicici',
     title: 'BICICI  ( Front-end-engineer )',
     image: 'bicici.png',
     demo: 'https://www.bicici.com/',
   },
   {
-    id: uuid(),
+    id: 'easy-erp',
     title: 'Personal project ( Full-stack - hosting )',
     image: 'personal-project-easy-erp.png',
     demo: 'https://easyerp.vercel.app/sign-in',
   },
   {
-    id: uuid(),
+    id: 'konnect-networks',
     title: 'Konnect Networks ( Backend-engineer )',
     image: 'konnect.png',
     demo: 'https://konnect.network/',
   },
   {
-    id: uuid(),
+    id: 'edorer',
     title: 'Edorer ( Full stack-engineer )',
     image: 'edorer.png',
     demo: 'https://edorer.com/',
   },
   {
-    id: uuid(),
+    id: 'baird-hunt',
     title: 'Baid hunt ( Full stack-engineer )',
     image: 'bairdhunt.png',
     demo: 'https://bairdhunt.com/',
   },
   {
-    id: uuid(),
+    id: 'tic-tac-toe',
     title: 'Tik Tac Toe',
     image: 'tic-tac-toe.png',
     github:
@@ -53,14 +50,14 @@ const allProjects = [
     demo: 'https://97fakhreddine.github.io/97Fakhreddine-ticTacToe.github.io/',
   },
   {
-    id: uuid(),
+    id: 'flappy-bird',
     title: 'Bounce Ball ( Flappy bird V1 )',
     image: 'flappybird.png',
     github: 'https://github.com/97Fakhreddine/Flappy-bird.github.io',
     demo: 'https://97fakhreddine.github.io/Flappy-bird.github.io/',
   },
   {
-    id: uuid(),
+    id: 'typescript-react-quiz',
     title: 'TypeScript React App quiz',
     image: 'react-quizz.png',
     github: 'https://github.com/97Fakhreddine/typeScript-React-Quizz-App',
